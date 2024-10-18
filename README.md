@@ -5,6 +5,10 @@
 ### Introduction
 Un train à sustentation magnétique utilise les forces magnétiques pour léviter au-dessus de la voie, sans contact avec des rails. Ce procédé permet de supprimer la résistance au roulement et d'atteindre des vitesses élevées.
 
+Il existe deux types de trains à grande vitesse à sustentation magnétique :
+- **Sustentation électromagnétique** : Lévitation par attraction avec des aimants (ex: Transrapid en Allemagne).
+- **Sustentation électrodynamique** : Lévitation par répulsion grâce aux courants de Foucault induits (ex: SCMaglev au Japon).
+
 ### Transrapid (Sustentation électromagnétique)
 Le Transrapid est le seul exemple commercial de train à sustentation électromagnétique, avec une ligne de 30 km en service depuis 2004 à Shanghai. Le train peut atteindre une vitesse de 430 km/h avec une accélération de 0 à 350 km/h en 2 minutes.
 
@@ -16,9 +20,8 @@ Le projet consiste à étudier le système de sustentation électromagnétique d
 ### Équation du Mouvement
 La force électromagnétique sur le train est exprimée comme suit :
 
-$
-\dot{z} = \frac{N^2 S \mu_0 i^2}{2z^2} - mg
-$
+
+$\dot{z} = \frac{N^2 S \mu_0 i^2}{2z^2} - mg$
 
 Avec :
 - $N$ : Nombre de spires (1000)
@@ -27,19 +30,17 @@ Avec :
 - $i$ : Intensité du courant dans la bobine
 
 ### Linéarisation autour du point d'équilibre
-L'équation de mouvement est linéarisée autour de la position d'équilibre \( z_0 = 10 \, \text{mm} \).
+L'équation de mouvement est linéarisée autour de la position d'équilibre $z_0 = 10$mm.
 
 La fonction de transfert linéarisée devient :
 
-$
-\frac{\Delta z(p)}{\Delta i(p)} = -\frac{k_1 k_2 K_z}{p^2 + K_z}
-$
+$\frac{\Delta z(p)}{\Delta i(p)} = -\frac{k_1 k_2 K_z}{p^2 + K_z}$
 
 ### Paramètres Système
-- Perméabilité magnétique \( \mu_0 = 4\pi \times 10^{-7} \, \text{H⋅m}^{-1} \)
-- Masse du train \( m = 180 \, \text{tonnes} \)
-- Gain de capteur de position \( k_2 = 145 \, \text{V/m} \)
-- Gain de boucle de courant \( k_1 = 10 \, \text{A/V} \)
+- Perméabilité magnétique $\mu_0 = 4\pi \times 10^{-7}, \text{H⋅m}^{-1}$
+- Masse du train $m = 180 \, \text{tonnes}$
+- Gain de capteur de position $k_2 = 145 \, \text{V/m}$
+- Gain de boucle de courant $k_1 = 10 \, \text{A/V}$
 
 ## Synthèse des Correcteurs
 
