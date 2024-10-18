@@ -16,24 +16,24 @@ Le projet consiste à étudier le système de sustentation électromagnétique d
 ### Équation du Mouvement
 La force électromagnétique sur le train est exprimée comme suit :
 
-\[
-m\ddot{z} = \frac{N^2 S \mu_0 i^2}{2z^2} - mg
-\]
+$
+\dot{z} = \frac{N^2 S \mu_0 i^2}{2z^2} - mg
+$
 
 Avec :
-- \( N \) : Nombre de spires (1000)
-- \( S \) : Surface du circuit magnétique (0,50 m²)
-- \( z \) : Position du train par rapport au rail
-- \( i \) : Intensité du courant dans la bobine
+- $N$ : Nombre de spires (1000)
+- $S$ : Surface du circuit magnétique (0,50 m²)
+- $z$ : Position du train par rapport au rail
+- $i$ : Intensité du courant dans la bobine
 
 ### Linéarisation autour du point d'équilibre
 L'équation de mouvement est linéarisée autour de la position d'équilibre \( z_0 = 10 \, \text{mm} \).
 
 La fonction de transfert linéarisée devient :
 
-\[
+$
 \frac{\Delta z(p)}{\Delta i(p)} = -\frac{k_1 k_2 K_z}{p^2 + K_z}
-\]
+$
 
 ### Paramètres Système
 - Perméabilité magnétique \( \mu_0 = 4\pi \times 10^{-7} \, \text{H⋅m}^{-1} \)
